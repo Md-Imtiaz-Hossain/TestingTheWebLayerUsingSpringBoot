@@ -17,7 +17,6 @@ public class WebLayerTest {
     @Autowired
     private MockMvc mockMvc;
 
-    //Test the web layer - not the whole application context but only the web layer
     @Test
     public void shouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
@@ -25,5 +24,4 @@ public class WebLayerTest {
     }
 }
 
-//    We will start with a simple test that the application context loads successfully,
-//    and continue on to test just the web layer using Spring's MockMvc .
+

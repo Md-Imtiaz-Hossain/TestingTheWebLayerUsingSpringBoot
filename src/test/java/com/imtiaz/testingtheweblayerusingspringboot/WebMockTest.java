@@ -22,7 +22,6 @@ public class WebMockTest {
     @MockBean
     private GreetingService greetingService;
 
-    //Test GreetingController
     @Test
     public void greetingShouldReturnMessageFromService() throws Exception {
         when(greetingService.greet()).thenReturn("Hello, Mock");

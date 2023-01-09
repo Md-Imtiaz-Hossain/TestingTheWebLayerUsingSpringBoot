@@ -20,11 +20,3 @@ public class SmokeTest {
 
 }
 
-//    What is Smoke Testing
-//In simple terms, smoke tests means verifying the important features are working and there are no showstoppers
-// in the build that is under testing.
-
-//    Smoke Testing is a software testing process that determines whether the deployed software build is stable or not.
-//    Smoke testing is a confirmation for QA team to proceed with further software testing.
-//    It consists of a minimal set of tests run on each build to test software functionalities.
-//    Smoke testing is also known as “Build Verification Testing” or “Confidence Testing.”

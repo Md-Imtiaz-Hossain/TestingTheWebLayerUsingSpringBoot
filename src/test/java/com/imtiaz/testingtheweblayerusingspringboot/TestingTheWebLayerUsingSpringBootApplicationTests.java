@@ -23,7 +23,6 @@ class TestingTheWebLayerUsingSpringBootApplicationTests {
 	@Autowired
 	private MockMvc mockMvc;
 
-	//Test HTTP Request without starting server.
 	@Test
 	public void shouldReturnDefaultMessage() throws Exception {
 		this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
