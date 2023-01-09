@@ -12,7 +12,6 @@ public class SmokeTest {
     @Autowired
     private HomeController homeController;
 
-    //Sanity Test to check if the application context starts or not
     @Test
     public void contextLoads() throws Exception {
         assertThat(homeController).isNotNull();
