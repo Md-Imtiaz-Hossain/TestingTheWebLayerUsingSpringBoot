@@ -29,4 +29,10 @@ class TestingTheWebLayerUsingSpringBootApplicationTests {
 				.andExpect(content().string(containsString("Hello, World")));
 	}
 
+	@Test
+	public void wT() throws Exception {
+		this.mockMvc.perform(get("/myM")).andDo(print()).andExpect(status().isOk())
+				.andExpect(content().string(containsString("Welcome to - myMethod")));
+	}
+
 }
