@@ -30,4 +30,12 @@ public class WebMockTest {
                 .andExpect(content().string(containsString("Hello, Mock")));
     }
 
+    @Test
+    public void wT() throws Exception {
+        when(greetingService.anotherTest()).thenReturn("Hello, This is another test");
+
+        this.mockMvc.perform(get("/g2")).andDo(print()).andExpect(status().isOk())
+                .andExpect(content().string(containsString("Hello, This is another test")));
+    }
+
 }

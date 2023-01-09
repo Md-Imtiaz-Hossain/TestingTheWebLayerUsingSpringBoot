@@ -9,4 +9,8 @@ public class GreetingService {
         return "Hello, World";
     }
 
+    public String anotherTest() {
+        return "Hello, This is another test";
+    }
+
 }

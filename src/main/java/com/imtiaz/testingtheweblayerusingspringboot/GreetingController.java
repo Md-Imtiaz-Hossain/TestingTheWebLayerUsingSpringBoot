@@ -17,4 +17,9 @@ public class GreetingController {
         return greetingService.greet();
     }
 
+    @RequestMapping("/g2")
+    public @ResponseBody String m2() {
+        return greetingService.anotherTest();
+    }
+
 }
