@@ -24,4 +24,18 @@ public class HttpRequestTest {
                 .contains("Hello, World");
     }
 
+    @Test
+    public void myMethod() throws Exception {
+        assertThat(this.restTemplate.getForObject
+                ("http://localhost:" + port + "/myM", String.class))
+                .contains("Welcome to - myMethod");
+    }
+
+    @Test
+    public void myMethod2() throws Exception {
+        assertThat(this.restTemplate.getForObject
+                ("http://localhost:" + port + "/myM2", String.class))
+                .contains("10");
+    }
+
 }
